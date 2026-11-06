@@ -4,30 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlitzHan Labs</title>
-    <link rel="stylesheet" href="site.css">
+    <meta name="description" content="Yıldırım Yiğit'in iOS uygulamaları, tarayıcı oyunları, oyun rehberleri ve küçük araçları.">
+    <meta name="theme-color" content="#f7f4ee" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f1b16'/%3E%3Cpath d='M18 5 8 18h7l-2 9 10-13h-7z' fill='%23f0a04b'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-<div class="container">
-    <header>
-        <div class="brand">BlitzHan Labs</div>
-        <p>iOS uygulamaları — destek ve gizlilik sayfaları</p>
-    </header>
+<header class="nav">
+    <div class="wrap nav-in">
+        <a class="logo" href="#" aria-label="BlitzHan Labs">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M11.5 1.5 4 11.5h5l-1.5 7 7.5-10h-5z"/></svg>
+            BlitzHan Labs
+        </a>
+        <nav class="nav-links" aria-label="Sayfa">
+            <a href="#katalog">Katalog</a>
+            <a href="#destek">Uygulama desteği</a>
+            <a href="https://github.com/BlitzHan" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+    </div>
+</header>
 
-    <div class="card apps">
-        <a href="fiyatmatik/">Fiyatmatik</a>
-        <span>KDV, indirim ve zam hesaplama &middot; <a href="fiyatmatik/gizlilik.html">Gizlilik</a></span>
+<main>
+    <section class="hero wrap">
+        <p class="eyebrow mono" id="edition"></p>
+        <h1>Atölyeden çıkanlar</h1>
+        <p class="lede">Yıldırım Yiğit'in iOS uygulamaları, tarayıcı oyunları, oyun rehberleri ve küçük araçları. Çoğu tarayıcıda hemen açılıyor.</p>
+
+        <figure class="ledger" aria-labelledby="ledger-cap">
+            <figcaption id="ledger-cap">
+                <span>Üretim defteri</span>
+                <span class="mono" id="ledger-sum"></span>
+            </figcaption>
+            <div class="ledger-grid" id="ledger"></div>
+        </figure>
+    </section>
+
+    <div class="filters-bar" id="katalog">
+        <div class="wrap">
+            <div class="filters" id="filters" role="toolbar" aria-label="Kategoriler"></div>
+        </div>
     </div>
 
-    <div class="card apps">
-        <a href="blitzflash/">BlitzFlash</a>
-        <span>Kelime öğrenme &middot; <a href="blitzflash/gizlilik.html">Gizlilik</a></span>
+    <div class="wrap" id="sections">
+        <noscript><p class="lede">Proje listesi için JavaScript gerekli.</p></noscript>
     </div>
+</main>
 
-    <div class="card">
-        <p>İletişim: <a href="mailto:blitzhan@gmail.com">blitzhan@gmail.com</a></p>
+<footer class="foot" id="destek">
+    <div class="wrap foot-in">
+        <div>
+            <h3>Uygulama desteği</h3>
+            <ul>
+                <li><span>Fiyatmatik</span><a href="fiyatmatik/">Destek</a><a href="fiyatmatik/gizlilik.html">Gizlilik</a></li>
+                <li><span>BlitzFlash</span><a href="blitzflash/">Destek</a><a href="blitzflash/gizlilik.html">Gizlilik</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>İletişim</h3>
+            <ul>
+                <li><a href="mailto:blitzhan@gmail.com">blitzhan@gmail.com</a></li>
+                <li><a href="https://github.com/BlitzHan" target="_blank" rel="noopener">github.com/BlitzHan</a></li>
+            </ul>
+        </div>
+        <p class="copy mono">© 2026 BlitzHan Labs</p>
     </div>
+</footer>
 
-    <footer>&copy; 2026 BlitzHan Labs</footer>
-</div>
+<script src="projects.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
